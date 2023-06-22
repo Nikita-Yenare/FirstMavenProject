@@ -13,9 +13,9 @@ public class App
         Student student =new Student();
         
         //Add values
-        student.setFirstName("Tanaya");
-        student.setLastName("Pawar");
-        student.setEmail("tanayapawar530@gmail.com");
+        student.setFirstName("priyanka");
+        student.setLastName("P");
+        student.setEmail("priyanka@gmail.com");
       
         
         //passing value in parameterized constructor
@@ -24,8 +24,8 @@ public class App
 
         
         // test updateStudent
-         student.setFirstName("Pari");
-         studentDao.updateStudent(student);
+         //student.setFirstName("manju");
+         //studentDao.updateStudent(student);
         
         // test getStudentById
         //Student student2 = studentDao.getStudentById(student.getId());
@@ -33,7 +33,7 @@ public class App
         // test getAllStudents
         List < Student > students = studentDao.getAllStudents();
         System.out.println("List of the students:"); 
-        students.forEach(student2 -> System.out.println("Student Id:"+student2.getId()+"    " +"Name:"+student2.getFirstName()+"   " +"Last Name:"+student2.getLastName()+"   " +"Email Id:"+student2.getEmail()));
+        students.forEach(student2 -> System.out.println("Student Id:"+student2.getId()+"    " +"Name:"+student2.getFirstName()));
         // -> lambda expression left side of arrow:parameter ; right:value
         
         // test deleteStudent
